@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNC - Login Jumpy</title>
+    <link rel="stylesheet" href="/src/style.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="src/img/logo.png" alt="logo Dnc">
+    </header>
+    <section>
+        <div>
+            <img src="src/img/jumpy1.png" alt="jumpy">
+            <h2>Bem vindo ao Jumpy</h2>
+        </div>
+        <form class="form" id="form">
+            <label for="fname">Nome Completo:</label><br>
+            <input type="text" id="name" name="name" placeholder="Nome Completo"><br>
+            <span id="erroNome">*Campo Obrigatório*</span>
+            <label for="fmail">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="email@email.com"><br>
+            <span id="erroEmail">*Campo Obrigatório*</span>
+            <label for="ftel">Telefone:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="(00) 0000-0000"><br>
+            <span id="erroPhone">*Campo Obrigatório*</span>
+            <label for="fcpf">CPF:</label><br>
+            <input type="text" id="CPF" name="CPF" placeholder="000.000.000-00"><br>
+            <span id="erroCPF">*Campo Obrigatório*</span>
+            <label for="pass">Senha:</label><br>
+            <input type="password" id="password" name="password" placeholder="•••••••••••••••"><br>
+            <span id="erroPassword">*Campo Obrigatório*</span>
+            <button type="submit" value="Cadastrar" id="cadastrar" onclick="checkForm()">Cadastrar</button>
+            <span id="sucess">Sucesso!</span>
+        </form>
+    </section>
+</body>
+<script src="src/script.js"></script>
+
+</html>
